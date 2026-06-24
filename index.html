@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Queen May | Boat Experience Tunisia</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <script>
   const observer = new IntersectionObserver((entries) => {
@@ -45,9 +46,20 @@
       <div class="flex items-center gap-3">
         <img src="/public/logo/queen may.jpeg" class="h-12 w-12 object-contain rounded-full p-1" />
 
-        <div id="brandText" class="font-bold text-white md:text-xl tracking-wide transition-colors duration-300">
-          Queen May
-        </div>
+        <div class="relative font-bold md:text-xl tracking-wide text-[#041D46]">
+
+  <!-- soft glow background -->
+  <div class="absolute -inset-2 bg-white/30 blur-xl rounded-full"></div>
+
+  <!-- subtle gradient aura -->
+  <div class="absolute -inset-3 bg-gradient-to-r from-white/40 via-blue-100/20 to-white/30 blur-2xl rounded-full"></div>
+
+  <!-- text -->
+  <span class="relative drop-shadow-sm">
+    Queen May
+  </span>
+
+</div>
       </div>
 
       <!-- LINKS -->
@@ -59,18 +71,23 @@
         <a href="#booking">Book</a>
       </div>
 
-      <a href="#booking" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:scale-105 transition">
-        Reserve
-      </a>
+      <a href="#booking"
+   class="bg-[#041D46] text-white px-5 py-2 rounded-full hover:scale-105 transition duration-300">
+  Reserve
+</a>
 
     </nav>
   </header>
 
+
+
+
+
   <!-- HERO -->
 
-  <section class="h-screen relative flex items-center justify-center">
+  <section class="min-h-screen relative flex items-center justify-center">
 
-    <img src="/public/BANNER.jpeg" class="absolute inset-0 w-full h-full object-cover">
+    <img src="/public/logo/BANNER.jpeg" class="absolute inset-0 w-full h-full object-cover">
 
     <div class="absolute inset-0 bg-[#041D46]/75"></div>
 
@@ -80,20 +97,20 @@
         Expérience de Bateau de Luxe
       </p>
 
-      <h1 class="text-6xl md:text-8xl font-bold">
+      <h1 class="text-5xl sm:text-6xl md:text-8xl font-bold">
         Queen May
       </h1>
 
-      <h2 class="text-2xl md:text-4xl mt-6 font-light">
+      <h2 class="text-xl md:text-4xl mt-4 md:mt-6 font-light">
         La Mer. Votre Moment.
       </h2>
 
-      <p class="mt-8 text-lg text-gray-200">
+      <p class="mt-5 md:mt-8 text-base md:text-lg text-gray-200">
         Croisières privées au départ de la Marina de Gammarth.
         Découvrez les plus belles côtes de Tunisie à bord du Queen May.
       </p>
 
-      <div class="mt-10 flex flex-wrap justify-center gap-4">
+      <div class="mt-6 md:mt-10 flex flex-col sm:flex-row justify-center gap-3 md:gap-4">
 
         <a href="#booking" class="bg-white text-[#041D46] px-8 py-4 rounded-full font-bold hover:scale-105 transition">
           Réserver
@@ -110,292 +127,383 @@
 
   </section>
 
-  <!-- DESTINATIONsssssssS -->
-  <section class="bg-white py-10 border-t border-gray-100">
-    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-6 text-center">
 
-      <div class="flex flex-col items-center">
-        <div class="text-blue-600 text-2xl mb-2">✔</div>
-        <p class="font-semibold text-gray-800">Bateau Privé Uniquement</p>
-        <p class="text-xs text-gray-500 mt-1">Expérience entièrement privée</p>
+
+
+
+  
+ <section class="bg-white py-6 md:py-16 border-t border-gray-100">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-4 md:gap-6 text-center">
+
+    <div class="flex flex-col items-center">
+      <div class="text-[#D8A556] text-3xl mb-3">
+        <i class="fas fa-anchor"></i>
+      </div>
+      <p class="font-semibold text-gray-800">Bateau Privé Uniquement</p>
+      <p class="text-xs text-gray-500 mt-1">Expérience entièrement privée</p>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <div class="text-[#D8A556] text-3xl mb-3">
+        <i class="fas fa-calendar-check"></i>
+      </div>
+      <p class="font-semibold text-gray-800">Confirmation Instantanée</p>
+      <p class="text-xs text-gray-500 mt-1">Réservation rapide et simple</p>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <div class="text-[#D8A556] text-3xl mb-3">
+        <i class="fas fa-gem"></i>
+      </div>
+      <p class="font-semibold text-gray-800">Sans Frais Cachés</p>
+      <p class="text-xs text-gray-500 mt-1">Prix transparent garanti</p>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <div class="text-[#D8A556] text-3xl mb-3">
+        <i class="fas fa-shield-alt"></i>
+      </div>
+      <p class="font-semibold text-gray-800">Équipage Professionnel</p>
+      <p class="text-xs text-gray-500 mt-1">Sécurité et confort assurés</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- DESTINATIONsssssssS -->
+  <section id="destinations"
+  class="py-12 md:py-16 text-white relative overflow-hidden">
+
+  <!-- 🌊 PREMIUM BACKGROUND (UPGRADED) -->
+  <div class="absolute inset-0 bg-gradient-to-b from-[#071a33] via-[#041D46] to-[#020b18]"></div>
+
+  <!-- soft glow -->
+  <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-blue-500/10 blur-3xl rounded-full"></div>
+
+  <div class="relative max-w-6xl mx-auto px-4 md:px-6">
+
+    <!-- HEADER -->
+    <div class="text-left md:text-center mb-10 md:mb-16">
+      <h2 class="text-2xl md:text-5xl font-bold">Destinations</h2>
+
+      <p class="text-white/70 mt-2 md:mt-4 max-w-2xl md:mx-auto text-sm md:text-base leading-snug">
+        Explorez les plus beaux lieux côtiers de Tunisie pour la baignade, la navigation et les couchers de soleil.
+      </p>
+    </div>
+
+    <!-- GRID -->
+    <div class="grid md:grid-cols-3 gap-5 md:gap-8">
+
+      <!-- HERO -->
+      <div class="md:col-span-2 group relative overflow-hidden rounded-3xl shadow-xl border border-white/10 h-64 md:h-[420px]">
+
+        <img src="/public/locations/sidi bou said.webp"
+          class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700"
+        />
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/30 to-transparent"></div>
+
+        <div class="absolute bottom-0 p-5 md:p-10">
+          <p class="text-xl md:text-3xl font-bold">Sidi Bou Saïd</p>
+          <p class="text-white/70 text-xs md:text-sm mt-2">
+            Falaises blanches et coucher de soleil iconique.
+          </p>
+        </div>
+
       </div>
 
-      <div class="flex flex-col items-center">
-        <div class="text-blue-600 text-2xl mb-2">✔</div>
-        <p class="font-semibold text-gray-800">Confirmation Instantanée</p>
-        <p class="text-xs text-gray-500 mt-1">Réservation rapide et simple</p>
+      <!-- CARD -->
+      <div class="group relative overflow-hidden rounded-3xl shadow-xl border border-white/10 h-64 md:h-[420px]">
+
+        <img src="/public/locations//la marsa.webp"
+          class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700"
+        />
+
+        <div class="absolute inset-0 bg-black/60"></div>
+
+        <div class="absolute bottom-0 p-5 md:p-8">
+          <p class="text-lg md:text-2xl font-semibold">La Marsa</p>
+          <p class="text-white/70 text-xs md:text-sm mt-2">
+            Plages calmes et eaux turquoise.
+          </p>
+        </div>
+
       </div>
 
-      <div class="flex flex-col items-center">
-        <div class="text-blue-600 text-2xl mb-2">✔</div>
-        <p class="font-semibold text-gray-800">Sans Frais Cachés</p>
-        <p class="text-xs text-gray-500 mt-1">Prix transparent garanti</p>
+      <!-- SMALL -->
+      <div class="group relative overflow-hidden rounded-3xl shadow-lg border border-white/10 h-52 md:h-72">
+
+        <img src="/public/locations/gammarth.webp"
+          class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700"
+        />
+
+        <div class="absolute inset-0 bg-black/55"></div>
+
+        <div class="absolute bottom-0 p-4 md:p-6">
+          <p class="text-lg font-semibold">Gammarth</p>
+          <p class="text-white/70 text-xs mt-1">Côte luxueuse</p>
+        </div>
+
       </div>
 
-      <div class="flex flex-col items-center">
-        <div class="text-blue-600 text-2xl mb-2">✔</div>
-        <p class="font-semibold text-gray-800">Équipage Professionnel</p>
-        <p class="text-xs text-gray-500 mt-1">Sécurité et confort assurés</p>
+      <!-- SMALL -->
+      <div class="group relative overflow-hidden rounded-3xl shadow-lg border border-white/10 h-52 md:h-72">
+
+        <img src="/public/locations/ghar al milh.webp"
+          class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700"
+        />
+
+        <div class="absolute inset-0 bg-black/55"></div>
+
+        <div class="absolute bottom-0 p-4 md:p-6">
+          <p class="text-lg font-semibold">Ghar El Melh</p>
+          <p class="text-white/70 text-xs mt-1">Lagune cachée</p>
+        </div>
+
+      </div>
+
+      <!-- SMALL -->
+      <div class="group relative overflow-hidden rounded-3xl shadow-lg border border-white/10 h-52 md:h-72">
+
+        <img src="/public/locations/ras fartas.webp"
+          class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700"
+        />
+
+        <div class="absolute inset-0 bg-black/55"></div>
+
+        <div class="absolute bottom-0 p-4 md:p-6">
+          <p class="text-lg font-semibold">Ras Fartas</p>
+          <p class="text-white/70 text-xs mt-1">Nature sauvage</p>
+        </div>
+
+      </div>
+
+      <!-- FIXED CARD (KORBOUS - NOW BALANCED FEATURE) -->
+      <div class="md:col-span-3 group relative overflow-hidden rounded-3xl shadow-xl border border-white/10 h-64 md:h-72">
+
+        <img src="/public/locations/korbous.webp"
+          class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700"
+        />
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+
+        <div class="absolute bottom-0 p-5 md:p-8">
+          <p class="text-xl md:text-2xl font-semibold">Korbous</p>
+          <p class="text-white/70 text-xs md:text-sm mt-2">
+            Sources thermales naturelles entre montagne et mer.
+          </p>
+        </div>
+
       </div>
 
     </div>
-  </section>
+
+  </div>
+
+</section>
 
 
-  <section id="destinations" class="py-28 bg-[#041D46] text-white">
 
-    <div class="max-w-6xl mx-auto px-6">
+<!--Activities -->
 
-      <!-- HEADER -->
-      <div class="text-center mb-16">
-        <h2 class="text-5xl font-bold">Destinations</h2>
-        <p class="text-white/70 mt-4 max-w-2xl mx-auto">
-          Explorez les plus beaux lieux côtiers de Tunisie, soigneusement sélectionnés pour la baignade, la navigation
-          et les couchers de soleil.
+
+ <section id="activities" class="py-10 md:py-16 relative overflow-hidden">
+
+  <!-- BACKGROUND -->
+  <div class="absolute inset-0 bg-gradient-to-b from-white to-[#f3f6fb]"></div>
+
+  <div class="relative max-w-6xl mx-auto px-4 md:px-6">
+
+    <!-- HEADER -->
+    <div class="text-left md:text-center mb-8 md:mb-16">
+      <h2 class="text-2xl md:text-5xl font-bold text-[#041D46]">
+        Activités Incluses
+      </h2>
+
+      <p class="text-gray-600 mt-2 md:mt-4 max-w-2xl md:mx-auto text-sm md:text-base leading-snug">
+        Tout est inclus dans votre expérience Queen May — conçu pour le confort, le divertissement et des moments inoubliables en mer.
+      </p>
+    </div>
+
+    <!-- GRID -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
+
+      <!-- CARD -->
+      <div class="bg-white/70 backdrop-blur-xl border border-gray-200
+            p-4 md:p-8 rounded-2xl text-center shadow-md
+            hover:-translate-y-2 hover:shadow-xl transition duration-300">
+
+        <div class="text-3xl md:text-5xl mb-3 md:mb-5">🤿</div>
+
+        <p class="text-lg md:text-xl font-semibold text-[#041D46]">
+          Plongée avec masque
         </p>
-      </div>
 
-      <!-- GRID -->
-      <div class="grid md:grid-cols-3 gap-8">
-
-        <!-- CARD -->
-        <div class="group bg-white/10 backdrop-blur-xl border border-white/20 
-                rounded-3xl p-10 text-center shadow-lg
-                transition duration-300 hover:bg-white/20 hover:-translate-y-2">
-
-          <p class="text-2xl font-semibold">Sidi Bou Saïd</p>
-          <p class="text-white/60 text-sm mt-3">
-            Village emblématique en falaise avec des eaux cristallines et des couchers de soleil spectaculaires.
-          </p>
-
-        </div>
-
-        <div class="group bg-white/10 backdrop-blur-xl border border-white/20 
-                rounded-3xl p-10 text-center shadow-lg
-                transition duration-300 hover:bg-white/20 hover:-translate-y-2">
-
-          <p class="text-2xl font-semibold">Gammarth</p>
-          <p class="text-white/60 text-sm mt-3">
-            Côte luxueuse aux eaux calmes, idéale pour une navigation fluide et agréable.
-          </p>
-
-        </div>
-
-        <div class="group bg-white/10 backdrop-blur-xl border border-white/20 
-                rounded-3xl p-10 text-center shadow-lg
-                transition duration-300 hover:bg-white/20 hover:-translate-y-2">
-
-          <p class="text-2xl font-semibold">Ghar El Melh</p>
-          <p class="text-white/60 text-sm mt-3">
-            Lagune cachée parfaite pour les baignades et les moments de détente.
-          </p>
-
-        </div>
-
-        <div class="group bg-white/10 backdrop-blur-xl border border-white/20 
-                rounded-3xl p-10 text-center shadow-lg
-                transition duration-300 hover:bg-white/20 hover:-translate-y-2">
-
-          <p class="text-2xl font-semibold">Ras Fartas</p>
-          <p class="text-white/60 text-sm mt-3">
-            Côte naturelle et isolée avec une beauté sauvage et une mer transparente.
-          </p>
-
-        </div>
-
-        <div class="group bg-white/10 backdrop-blur-xl border border-white/20 
-                rounded-3xl p-10 text-center shadow-lg
-                transition duration-300 hover:bg-white/20 hover:-translate-y-2">
-
-          <p class="text-2xl font-semibold">Raf Raf</p>
-          <p class="text-white/60 text-sm mt-3">
-            Longues plages de sable et eaux calmes idéales pour les excursions d’une journée.
-          </p>
-
-        </div>
-
-        <div class="group bg-white/10 backdrop-blur-xl border border-white/20 
-                rounded-3xl p-10 text-center shadow-lg
-                transition duration-300 hover:bg-white/20 hover:-translate-y-2">
-
-          <p class="text-2xl font-semibold">Korbous</p>
-          <p class="text-white/60 text-sm mt-3">
-            Célèbre pour ses sources thermales et ses paysages montagne-mer spectaculaires.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <section id="activities" class="py-28 relative overflow-hidden">
-
-    <!-- BACKGROUND -->
-    <div class="absolute inset-0 bg-gradient-to-b from-white to-[#f3f6fb]"></div>
-
-    <div class="relative max-w-6xl mx-auto px-6">
-
-      <!-- HEADER -->
-      <div class="text-center mb-16">
-        <h2 class="text-5xl font-bold text-[#041D46]">
-          Activités Incluses
-        </h2>
-
-        <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
-          Tout est inclus dans votre expérience Queen May — conçu pour le confort, le divertissement et des moments
-          inoubliables en mer.
+        <p class="text-gray-500 text-xs md:text-sm mt-2 md:mt-3 leading-snug">
+          Explorez les eaux cristallines de la Méditerranée en toute sécurité.
         </p>
+
       </div>
 
-      <!-- GRID -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- CARD -->
+      <div class="bg-white/70 backdrop-blur-xl border border-gray-200
+            p-4 md:p-8 rounded-2xl text-center shadow-md
+            hover:-translate-y-2 hover:shadow-xl transition duration-300">
 
-        <!-- SNORKELING -->
-        <div class="bg-white/70 backdrop-blur-xl border border-gray-200
-              p-8 rounded-3xl text-center shadow-md
-              hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <div class="text-3xl md:text-5xl mb-3 md:mb-5">🎤</div>
 
-          <div class="text-5xl mb-5">🤿</div>
+        <p class="text-lg md:text-xl font-semibold text-[#041D46]">
+          Karaoké
+        </p>
 
-          <p class="text-xl font-semibold text-[#041D46]">
-            Plongée avec masque
-          </p>
+        <p class="text-gray-500 text-xs md:text-sm mt-2 md:mt-3 leading-snug">
+          Chantez vos morceaux préférés et profitez d'une ambiance festive à bord.
+        </p>
 
-          <p class="text-gray-500 text-sm mt-3 leading-relaxed">
-            Explorez les eaux cristallines de la Méditerranée en toute sécurité.
-          </p>
+      </div>
 
-        </div>
+      <!-- CARD -->
+      <div class="bg-white/70 backdrop-blur-xl border border-gray-200
+            p-4 md:p-8 rounded-2xl text-center shadow-md
+            hover:-translate-y-2 hover:shadow-xl transition duration-300">
 
-        <!-- KARAOKE -->
-        <div class="bg-white/70 backdrop-blur-xl border border-gray-200
-              p-8 rounded-3xl text-center shadow-md
-              hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <div class="text-3xl md:text-5xl mb-3 md:mb-5">🎧</div>
 
-          <div class="text-5xl mb-5">🎤</div>
+        <p class="text-lg md:text-xl font-semibold text-[#041D46]">
+          DJ sur demande
+        </p>
 
-          <p class="text-xl font-semibold text-[#041D46]">
-            Karaoké
-          </p>
+        <p class="text-gray-500 text-xs md:text-sm mt-2 md:mt-3 leading-snug">
+          Playlist personnalisée pour créer l'ambiance parfaite.
+        </p>
 
-          <p class="text-gray-500 text-sm mt-3 leading-relaxed">
-            Chantez vos morceaux préférés et profitez d'une ambiance festive à bord.
-          </p>
+      </div>
 
-        </div>
+      <!-- CARD -->
+      <div class="bg-white/70 backdrop-blur-xl border border-gray-200
+            p-4 md:p-8 rounded-2xl text-center shadow-md
+            hover:-translate-y-2 hover:shadow-xl transition duration-300">
 
-        <!-- DJ -->
-        <div class="bg-white/70 backdrop-blur-xl border border-gray-200
-              p-8 rounded-3xl text-center shadow-md
-              hover:-translate-y-2 hover:shadow-xl transition duration-300">
+        <div class="text-3xl md:text-5xl mb-3 md:mb-5">🏊</div>
 
-          <div class="text-5xl mb-5">🎧</div>
+        <p class="text-lg md:text-xl font-semibold text-[#041D46]">
+          Arrêts baignade
+        </p>
 
-          <p class="text-xl font-semibold text-[#041D46]">
-            DJ sur demande
-          </p>
-
-          <p class="text-gray-500 text-sm mt-3 leading-relaxed">
-            Une playlist personnalisée pour créer l'ambiance parfaite.
-          </p>
-
-        </div>
-
-        <!-- SWIMMING -->
-        <div class="bg-white/70 backdrop-blur-xl border border-gray-200
-              p-8 rounded-3xl text-center shadow-md
-              hover:-translate-y-2 hover:shadow-xl transition duration-300">
-
-          <div class="text-5xl mb-5">🏊</div>
-
-          <p class="text-xl font-semibold text-[#041D46]">
-            Arrêts baignade
-          </p>
-
-          <p class="text-gray-500 text-sm mt-3 leading-relaxed">
-            Profitez de pauses dans des criques aux eaux turquoise exceptionnelles.
-          </p>
-
-        </div>
+        <p class="text-gray-500 text-xs md:text-sm mt-2 md:mt-3 leading-snug">
+          Criques aux eaux turquoise exceptionnelles.
+        </p>
 
       </div>
 
     </div>
 
-  </section>
+  </div>
+
+</section>
+
+
+
+
+
   <!-- EXPERIENCE -->
-  <section id="experience" class="py-28 px-6">
+<section id="experience" class="py-4 md:py-16 px-5 md:px-6 bg-white">
 
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 md:gap-14 items-center">
 
-      <!-- IMAGE -->
-      <img src="/public/logo/queen may.jpeg" class="rounded-3xl h-[500px] object-fill w-full shadow-xl" />
+    <!-- IMAGE -->
+    <div class="relative group">
 
-      <!-- CONTENT -->
-      <div>
+      <img src="/public/logo/queen may.jpeg"
+        class="rounded-3xl w-full h-[240px] md:h-[450px] object-cover shadow-xl"
+      />
 
-        <h2 class="text-4xl font-bold text-[#041D46]">
-          Une Expérience en Mer Incomparable
-        </h2>
+      <!-- soft overlay glow -->
+      <div class="absolute inset-0 rounded-3xl bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
 
-        <p class="mt-6 text-gray-600">
-          Profitez d’une croisière privée de 3 heures avec des arrêts baignade, de la musique et des vues panoramiques
-          sur la Méditerranée.
-        </p>
+    </div>
 
-        <!-- FEATURES -->
-        <div class="mt-8 space-y-3 text-gray-700">
+    <!-- CONTENT -->
+    <div>
 
-          <p>• Croisière privée de 3 heures</p>
-          <p>• Arrêts baignade dans des eaux turquoise</p>
-          <p>• Expérience coucher de soleil disponible</p>
+      <h2 class="text-2xl md:text-4xl font-bold text-[#041D46] leading-snug">
+        Une Expérience en Mer Incomparable
+      </h2>
 
+      <p class="mt-4 text-gray-600 text-sm md:text-base leading-relaxed">
+        Croisière privée de 3h avec baignade, musique et vues panoramiques sur la Méditerranée.
+      </p>
+
+      <!-- FEATURES CARD -->
+      <div class="mt-6 md:mt-8 bg-gray-50 border border-gray-100 rounded-2xl p-5 md:p-6 space-y-3">
+
+        <div class="flex items-start gap-2 text-gray-700 text-sm md:text-base">
+          <span class="text-[#D8A556]">•</span>
+          <p>Croisière privée de 3 heures</p>
+        </div>
+
+        <div class="flex items-start gap-2 text-gray-700 text-sm md:text-base">
+          <span class="text-[#D8A556]">•</span>
+          <p>Arrêts baignade dans des eaux turquoise</p>
+        </div>
+
+        <div class="flex items-start gap-2 text-gray-700 text-sm md:text-base">
+          <span class="text-[#D8A556]">•</span>
+          <p>Expérience coucher de soleil disponible</p>
         </div>
 
       </div>
 
     </div>
 
-  </section>
+  </div>
+
+</section>
 
   <!-- DESTINATION -->
+
+
 
 
   <!-- FLEET -->
 
 
+
+
+
+
   <!-- GALLERY (NEW EXPANDED SECTION) -->
-  <section id="gallery" class="bg-gray-50 py-28 px-6">
+  <section id="gallery" class="bg-gray-50 py-8 md:py-16 px-5 md:px-6">
 
     <div class="max-w-6xl mb-5 mx-auto text-center">
 
       <!-- HEADER -->
-      <h2 class="text-4xl font-bold text-[#041D46]">Galerie</h2>
+      <h2 class="text-3xl md:text-4xl font-bold text-[#041D46]">Galerie</h2>
 
       <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
         Quelques instants capturés à bord de Queen May — entre mer, soleil et souvenirs inoubliables.
       </p>
 
       <!-- GRID -->
-      <div class="grid md:grid-cols-3 gap-6 mt-16">
+      <div class="grid md:grid-cols-3 gap-6 mt-8 md:mt-16">
 
         <!-- IMAGE -->
         <div class="overflow-hidden rounded-3xl shadow-md group">
-          <img src="/public/BANNER.jpeg"
-            class="h-80 w-full object-cover group-hover:scale-110 transition duration-700" />
+          <img src="/public/new/1.webp"
+            class="h-60 md:h-80 w-full object-cover group-hover:scale-110 transition duration-700" />
         </div>
 
         <div class="overflow-hidden rounded-3xl shadow-md group">
-          <img src="/public/rest/g1.jpeg"
-            class="h-80 w-full object-cover group-hover:scale-110 transition duration-700" />
+          <img src="/public/new/4.webp"
+            class="h-60 md:h-80 w-full object-cover group-hover:scale-110 transition duration-700" />
         </div>
 
         <div class="overflow-hidden rounded-3xl shadow-md group">
-          <img src="/public/rest/g3.jpeg"
-            class="h-80 w-full object-cover group-hover:scale-110 transition duration-700" />
+          <img src="/public/new/5.webp"
+            class="h-60 md:h-80 w-full object-cover group-hover:scale-110 transition duration-700" />
         </div>
 
 
@@ -406,136 +514,159 @@
 
   </section>
   <!-- hdajhjdhw-->
+
+
+
+
+
+
+
+
   <!-- PACKAGE PREVIEW (STATIC CARDS) -->
-  <section class="max-w-5xl mx-auto px-6 mb-16">
+  <section class="max-w-5xl mx-auto px-4 md:px-6 mb-12 md:mb-16">
+
+  <!-- HEADER -->
+  <div class="text-left md:text-center mb-8 md:mb-16">
+    <h2 class="text-2xl md:text-4xl font-bold text-[#041D46]">
+      Choisissez Votre Expérience
+    </h2>
+
+    <p class="text-gray-600 mt-2 md:mt-3 max-w-2xl md:mx-auto text-sm md:text-base leading-snug">
+      Deux formules privées exclusives conçues pour le confort, l’intimité et une expérience maritime haut de gamme.
+    </p>
+  </div>
+
+  <!-- GRID -->
+  <div class="grid md:grid-cols-2 gap-5 md:gap-8">
+
+    <!-- HALF DAY -->
+    <div class="relative bg-white rounded-2xl p-5 md:p-8 shadow-md border border-gray-100 
+              hover:-translate-y-1 hover:shadow-xl transition duration-300">
+
+      <h3 class="text-xl md:text-2xl font-bold text-[#041D46]">
+        Demi-Journée Privée
+      </h3>
+
+      <p class="text-gray-500 mt-2 text-xs md:text-sm leading-snug">
+        Une escapade courte idéale pour se détendre et profiter des plus beaux spots de baignade.
+      </p>
+
+      <!-- FEATURES -->
+      <div class="mt-4 md:mt-6 space-y-1.5 md:space-y-2 text-gray-700 text-xs md:text-sm">
+        <p>✔ Croisière privée de 3 heures</p>
+        <p>✔ Arrêts baignade en eaux cristallines</p>
+        <p>✔ Musique à bord</p>
+        <p>✔ Équipage professionnel</p>
+        <p>✔ Carburant inclus</p>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="mt-6 md:mt-8 flex items-end justify-between">
+
+        <div>
+          <p class="text-[10px] md:text-xs text-gray-400">À partir de</p>
+          <p class="text-2xl md:text-3xl font-bold text-[#041D46]">1800 TND</p>
+        </div>
+
+        <div class="text-[10px] md:text-xs text-gray-500 text-right">
+          Parfait pour couples
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- FULL DAY -->
+    <div class="relative bg-white rounded-2xl p-5 md:p-8 shadow-xl border-2 border-[#041D46]
+              hover:-translate-y-1 transition duration-300">
+
+      <!-- BADGE -->
+      <div class="absolute -top-2 left-4 bg-[#041D46] text-white text-[10px] md:text-xs px-3 py-1 rounded-full">
+        Le Plus Populaire
+      </div>
+
+      <h3 class="text-xl md:text-2xl font-bold text-[#041D46]">
+        Journée Complète Luxe
+      </h3>
+
+      <p class="text-gray-500 mt-2 text-xs md:text-sm leading-snug">
+        Une expérience complète le long de la côte avec confort premium, musique et coucher de soleil.
+      </p>
+
+      <!-- FEATURES -->
+      <div class="mt-4 md:mt-6 space-y-1.5 md:space-y-2 text-gray-700 text-xs md:text-sm">
+        <p>✔ Croisière privée journée entière</p>
+        <p>✔ Plusieurs arrêts baignade</p>
+        <p>✔ DJ / musique personnalisée</p>
+        <p>✔ Expérience coucher de soleil</p>
+        <p>✔ Sièges premium confort</p>
+        <p>✔ Glacière et boissons</p>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="mt-6 md:mt-8 flex items-end justify-between">
+
+        <div>
+          <p class="text-[10px] md:text-xs text-gray-400">À partir de</p>
+          <p class="text-2xl md:text-3xl font-bold text-[#041D46]">3000 TND</p>
+        </div>
+
+        <div class="text-[10px] md:text-xs text-gray-500 text-right">
+          Idéal pour groupes
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+  <!--dawygd-->
+ <section id="booking" class="py-10 md:py-16 bg-gradient-to-b from-white to-[#f3f6fb]">
+
+  <div class="max-w-6xl mx-auto px-4 md:px-6">
 
     <!-- HEADER -->
-    <div class="text-center mb-12">
-      <h2 class="text-4xl font-bold text-[#041D46]">
-        Choisissez Votre Expérience
+    <div class="mb-8 md:mb-16 text-left md:text-center">
+      <h2 class="text-2xl md:text-4xl font-bold text-[#041D46]">
+        Réservez Votre Expérience
       </h2>
 
-      <p class="text-gray-600 mt-3 max-w-2xl mx-auto">
-        Deux formules privées exclusives conçues pour le confort, l’intimité et une expérience maritime haut de gamme.
+      <p class="text-gray-600 mt-2 md:mt-3 max-w-2xl md:mx-auto text-sm md:text-base">
+        Choisissez votre formule, votre date et votre horaire.
+        Nous confirmerons votre réservation par email ou WhatsApp.
       </p>
     </div>
 
-    <!-- GRID -->
-    <div class="grid md:grid-cols-2 gap-8">
+    <!-- CONTENT -->
+    <div class="grid md:grid-cols-2 gap-6 md:gap-12 items-start">
 
-      <!-- HALF DAY -->
-      <div class="relative bg-white rounded-3xl p-8 shadow-md border border-gray-100 
-                hover:-translate-y-1 hover:shadow-xl transition duration-300">
-
-        <h3 class="text-2xl font-bold text-[#041D46]">
-          Demi-Journée Privée
-        </h3>
-
-        <p class="text-gray-500 mt-2 text-sm">
-          Une escapade courte idéale pour se détendre et profiter des plus beaux spots de baignade.
-        </p>
-
-        <!-- FEATURES -->
-        <div class="mt-6 space-y-2 text-gray-700 text-sm">
-          <p>✔ Croisière privée de 3 heures</p>
-          <p>✔ Arrêts baignade en eaux cristallines</p>
-          <p>✔ Musique à bord</p>
-          <p>✔ Équipage professionnel</p>
-          <p>✔ Carburant inclus</p>
-        </div>
-
-        <!-- FOOTER -->
-        <div class="mt-8 flex items-end justify-between">
-
-          <div>
-            <p class="text-xs text-gray-400">À partir de</p>
-            <p class="text-3xl font-bold text-[#041D46]">1800 TND</p>
-          </div>
-
-          <div class="text-xs text-gray-500">
-            Parfait pour couples
-          </div>
-
-        </div>
-
-      </div>
-
-      <!-- FULL DAY -->
-      <div class="relative bg-white rounded-3xl p-8 shadow-xl border-2 border-[#041D46]
-                hover:-translate-y-1 transition duration-300">
-
-        <!-- BADGE -->
-        <div class="absolute -top-3 left-6 bg-[#041D46] text-white text-xs px-3 py-1 rounded-full">
-          Le Plus Populaire
-        </div>
-
-        <h3 class="text-2xl font-bold text-[#041D46]">
-          Journée Complète Luxe
-        </h3>
-
-        <p class="text-gray-500 mt-2 text-sm">
-          Une expérience complète le long de la côte avec confort premium, musique et coucher de soleil.
-        </p>
-
-        <!-- FEATURES -->
-        <div class="mt-6 space-y-2 text-gray-700 text-sm">
-          <p>✔ Croisière privée journée entière</p>
-          <p>✔ Plusieurs arrêts baignade</p>
-          <p>✔ DJ / musique personnalisée</p>
-          <p>✔ Expérience coucher de soleil</p>
-          <p>✔ Sièges premium confort</p>
-          <p>✔ Glacière et boissons</p>
-        </div>
-
-        <!-- FOOTER -->
-        <div class="mt-8 flex items-end justify-between">
-
-          <div>
-            <p class="text-xs text-gray-400">À partir de</p>
-            <p class="text-3xl font-bold text-[#041D46]">3000 TND</p>
-          </div>
-
-          <div class="text-xs text-gray-500">
-            Idéal pour groupes
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-  <!--dawygd-->
-  <section id="booking" class="py-28 bg-gradient-to-b from-white to-[#f3f6fb]">
-
-    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-start">
-
-      <!-- LEFT: EXPERIENCE INFO -->
-      <!-- LEFT: INFO -->
-      <div>
-
-        <h2 class="text-4xl font-bold text-[#041D46]">
-          Réservez Votre Expérience
-        </h2>
-
-        <p class="text-gray-600 mt-4">
-          Choisissez votre formule, votre date et votre horaire. Nous confirmerons votre réservation par email ou
-          WhatsApp.
-        </p>
+      <!-- INFO -->
+      <div class="order-2 md:order-1 md:pr-8 text-left">
 
         <!-- HIGHLIGHTS -->
-        <div class="mt-8 space-y-4 text-gray-700">
+        <div class="space-y-2 md:space-y-3 text-gray-700 text-sm md:text-base">
           <p>✔ Croisière privée exclusive</p>
           <p>✔ Équipage professionnel</p>
           <p>✔ Arrêts baignade inclus</p>
           <p>✔ Musique & ambiance personnalisée</p>
         </div>
 
-        <!-- LOGO BLOCK (NEW) -->
-        <div class="mt-10 flex items-center gap-4">
-          <img src="/public/logo/queen may.jpeg" alt="Queen May Logo"
-            class="h-14 w-14 rounded-full object-cover border border-gray-200 shadow-sm" />
+        <!-- BRAND -->
+        <div class="mt-6 md:mt-8 flex items-center gap-3">
+          <img
+            src="/public/logo/queen may.jpeg"
+            alt="Queen May Logo"
+            class="h-11 w-11 md:h-12 md:w-12 rounded-full object-cover border border-gray-200 shadow-sm"
+          />
 
           <div>
             <p class="font-semibold text-[#041D46]">Queen May</p>
@@ -544,107 +675,127 @@
         </div>
 
         <!-- CONTACT -->
-        <div class="mt-8 text-sm text-gray-500 space-y-3">
+        <div class="mt-6 md:mt-8 text-sm text-gray-500 space-y-3 md:space-y-4 text-left">
 
-          <!-- LOCATION -->
-          <div class="flex items-start gap-2">
-            <span class="text-[#041D46]">📍</span>
-            <p class="text-gray-600">Marina de Gammarth</p>
+          <div class="flex items-start gap-3">
+            <span class="text-lg">📍</span>
+            <div>
+              <p class="font-medium text-[#041D46]">Location</p>
+              <p>Marina de Gammarth</p>
+            </div>
           </div>
 
-          <!-- PHONE -->
-          <div class="flex items-start gap-2">
-            <span class="text-[#041D46]">📞</span>
-            <p class="text-gray-600">(+216) 29637567</p>
+          <div class="flex items-start gap-3">
+            <span class="text-lg">📞</span>
+            <div>
+              <p class="font-medium text-[#041D46]">Phone</p>
+              <p>(+216) 29637567</p>
+              <p>(+216) 28275752</p>
+            </div>
           </div>
 
-          <!-- EMAIL -->
-          <div class="flex items-start gap-2">
-            <span class="text-[#041D46]">✉️</span>
-            <p class="text-gray-600">bateautunis@gmail.com</p>
+          <div class="flex items-start gap-3">
+            <span class="text-lg">✉️</span>
+            <div>
+              <p class="font-medium text-[#041D46]">Email</p>
+              <p>bateautunis@gmail.com</p>
+            </div>
           </div>
 
-          <!-- INSTAGRAM -->
-          <a href="https://www.instagram.com/bateautunis/" target="_blank"
-            class="flex items-center gap-2 mt-2 text-[#041D46] hover:text-[#031533] transition font-medium group">
-
-            <!-- Instagram Icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:scale-110 transition" viewBox="0 0 24 24"
-              fill="currentColor">
-              <path
-                d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5z" />
-              <path d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5A3.5 3.5 0 1 0 12 16a3.5 3.5 0 0 0 0-7z" />
-              <circle cx="17.2" cy="6.8" r="1.1" />
-            </svg>
-
-            <span class="underline underline-offset-4">@bateautunis</span>
+          <a
+            href="https://www.instagram.com/bateautunis/"
+            target="_blank"
+            class="flex items-center gap-3 text-[#041D46] hover:text-[#031533] transition font-medium"
+          >
+            <i class="fab fa-instagram text-xl"></i>
+            <span>@bateautunis</span>
           </a>
 
         </div>
+
       </div>
 
-      <!-- RIGHT: FORM -->
-      <!-- RIGHT: FORM (COMPACT PREMIUM VERSION) -->
-      <form action="https://formsubmit.co/bateautunis@gmail.com" method="POST"
-        class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition">
+      <!-- FORM -->
+      <form
+        action="https://formsubmit.co/bateautunis@gmail.com"
+        method="POST"
+        class="order-1 md:order-2 bg-white p-4 md:p-7 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition"
+      >
 
-        <!-- CONFIG -->
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_subject" value="🚤 New Queen May Booking Request">
         <input type="hidden" name="_template" value="table">
 
-        <!-- NAME -->
         <label class="text-sm font-medium text-gray-700">Nom complet</label>
-        <input name="name" type="text" required placeholder="Votre nom"
-          class="w-full p-3 border rounded-xl mt-1 mb-4 focus:ring-2 focus:ring-[#041D46] outline-none" />
+        <input
+          name="name"
+          type="text"
+          required
+          placeholder="Votre nom"
+          class="w-full p-3 border rounded-xl mt-1 mb-3 focus:ring-2 focus:ring-[#041D46] outline-none"
+        />
 
-        <!-- PHONE -->
         <label class="text-sm font-medium text-gray-700">Téléphone</label>
-        <input name="phone" type="tel" required placeholder="(+216) 29637567"
-          class="w-full p-3 border rounded-xl mt-1 mb-4 focus:ring-2 focus:ring-[#041D46] outline-none" />
+        <input
+          name="phone"
+          type="tel"
+          required
+          placeholder="(+216) 29637567"
+          class="w-full p-3 border rounded-xl mt-1 mb-3 focus:ring-2 focus:ring-[#041D46] outline-none"
+        />
 
-        <!-- PACKAGE -->
         <label class="text-sm font-medium text-gray-700">Formule</label>
-        <select name="package" required
-          class="w-full p-3 border rounded-xl mt-1 mb-4 focus:ring-2 focus:ring-[#041D46] outline-none">
-
+        <select
+          name="package"
+          required
+          class="w-full p-3 border rounded-xl mt-1 mb-3 focus:ring-2 focus:ring-[#041D46] outline-none"
+        >
           <option value="">Choisissez votre expérience</option>
           <option value="Half Day - 1800 TND">Demi-journée — 1800 TND</option>
           <option value="Full Day - 3000 TND">Journée complète — 3000 TND</option>
-
         </select>
 
-        <!-- DATE + TIME -->
         <div class="grid grid-cols-2 gap-3">
 
           <div>
             <label class="text-sm font-medium text-gray-700">Date</label>
-            <input name="date" type="date" required
-              class="w-full p-3 border rounded-xl mt-1 focus:ring-2 focus:ring-[#041D46] outline-none" />
+            <input
+              name="date"
+              type="date"
+              required
+              class="w-full p-3 border rounded-xl mt-1 focus:ring-2 focus:ring-[#041D46] outline-none"
+            />
           </div>
 
           <div>
             <label class="text-sm font-medium text-gray-700">Heure</label>
-            <input name="time" type="time" required
-              class="w-full p-3 border rounded-xl mt-1 focus:ring-2 focus:ring-[#041D46] outline-none" />
+            <input
+              name="time"
+              type="time"
+              required
+              class="w-full p-3 border rounded-xl mt-1 focus:ring-2 focus:ring-[#041D46] outline-none"
+            />
           </div>
 
         </div>
 
-        <!-- NOTES -->
-        <label class="text-sm font-medium text-gray-700 mt-4 block">
+        <label class="text-sm font-medium text-gray-700 mt-3 block">
           Demandes spéciales
         </label>
 
-        <textarea name="notes" rows="3" placeholder="Anniversaire, musique, événements..."
-          class="w-full p-3 border rounded-xl mt-1 focus:ring-2 focus:ring-[#041D46] outline-none"></textarea>
+        <textarea
+          name="notes"
+          rows="3"
+          placeholder="Anniversaire, musique, événements..."
+          class="w-full p-3 border rounded-xl mt-1 focus:ring-2 focus:ring-[#041D46] outline-none"
+        ></textarea>
 
-        <!-- SUBMIT -->
-        <button class="w-full mt-5 bg-[#041D46] text-white py-3 rounded-xl font-bold hover:scale-[1.03] transition">
+        <button
+          class="w-full mt-4 bg-[#041D46] text-white py-3 rounded-xl font-bold hover:scale-[1.03] transition"
+        >
           Confirmer la réservation
         </button>
 
-        <!-- TRUST -->
         <p class="text-center text-xs text-gray-500 mt-3">
           Réponse rapide • Expérience premium
         </p>
@@ -653,7 +804,9 @@
 
     </div>
 
-  </section>
+  </div>
+
+</section>
 
   <!-- CONTACT -->
 
