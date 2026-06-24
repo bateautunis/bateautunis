@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Queen May | Boat Experience Tunisia</title>
+  <link rel="icon" type="image/jpeg" href="/public/logo/queen may.jpeg">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
@@ -23,16 +24,54 @@
   hiddenElements.forEach((el) => observer.observe(el));
 </script>
 <style>
-  .reveal {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-  }
+  html {
+  scroll-behavior: smooth;
+}
+ .reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
 
-  .reveal.show {
-    opacity: 1;
-    transform: translateY(0px);
-  }
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Variants */
+.reveal-left {
+  transform: translateX(-40px);
+}
+
+.reveal-right {
+  transform: translateX(40px);
+}
+
+.reveal-left.show,
+.reveal-right.show {
+  transform: translateX(0);
+}
+.gold-glow {
+  position: absolute;
+  inset: -6px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(216,165,86,0.45) 0%, rgba(216,165,86,0) 70%);
+  animation: goldPulse 2.8s ease-in-out infinite;
+  filter: blur(12px);
+}
+
+@keyframes goldPulse {
+  0% { transform: scale(0.95); opacity: 0.5; }
+  50% { transform: scale(1.08); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.5; }
+}
+
+/* Delay helpers */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-500 { transition-delay: 500ms; }
 </style>
 
 <body class="bg-white text-gray-800 scroll-smooth">
@@ -112,9 +151,17 @@
 
       <div class="mt-6 md:mt-10 flex flex-col sm:flex-row justify-center gap-3 md:gap-4">
 
-        <a href="#booking" class="bg-white text-[#041D46] px-8 py-4 rounded-full font-bold hover:scale-105 transition">
-          Réserver
-        </a>
+        
+<div class="relative inline-flex">
+
+  <span class="gold-glow"></span>
+
+  <a href="#booking"
+     class="relative bg-white text-[#041D46] px-8 py-4 rounded-full font-bold hover:scale-105 transition shadow-lg">
+    Réserver
+  </a>
+
+</div>
 
         <a href="https://wa.me/21626559037" target="_blank"
           class="border border-white px-8 py-4 rounded-full hover:bg-white hover:text-[#041D46] transition">
