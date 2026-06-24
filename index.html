@@ -24,9 +24,10 @@
   hiddenElements.forEach((el) => observer.observe(el));
 </script>
 <style>
-  html {
-  scroll-behavior: smooth;
-}
+  html{
+   scroll-behavior: smooth;
+
+  }
  .reveal {
   opacity: 0;
   transform: translateY(40px);
@@ -52,14 +53,7 @@
 .reveal-right.show {
   transform: translateX(0);
 }
-.gold-glow {
-  position: absolute;
-  inset: -6px;
-  border-radius: 9999px;
-  background: radial-gradient(circle, rgba(216,165,86,0.45) 0%, rgba(216,165,86,0) 70%);
-  animation: goldPulse 2.8s ease-in-out infinite;
-  filter: blur(12px);
-}
+
 
 @keyframes goldPulse {
   0% { transform: scale(0.95); opacity: 0.5; }
@@ -152,21 +146,19 @@
       <div class="mt-6 md:mt-10 flex flex-col sm:flex-row justify-center gap-3 md:gap-4">
 
         
-<div class="relative inline-flex">
-
-  <span class="gold-glow"></span>
-
+<div class="flex flex-wrap justify-center gap-4">
   <a href="#booking"
-     class="relative bg-white text-[#041D46] px-8 py-4 rounded-full font-bold hover:scale-105 transition shadow-lg">
-    Réserver
+     class="bg-white text-[#041D46] px-8 py-4 rounded-full font-bold hover:scale-105 transition">
+     Réserver
   </a>
 
+  <a href="https://wa.me/21629637567"
+     class="px-8 py-4 rounded-full border border-white text-white font-bold hover:bg-white/10 transition">
+     WhatsApp
+  </a>
 </div>
 
-        <a href="https://wa.me/21626559037" target="_blank"
-          class="border border-white px-8 py-4 rounded-full hover:bg-white hover:text-[#041D46] transition">
-          WhatsApp
-        </a>
+       
 
       </div>
 
@@ -776,7 +768,7 @@
 
           <select name="package"
             class="w-full p-2.5 border rounded-lg focus:ring-2 focus:ring-[#041D46] outline-none text-sm">
-            <option value="">Formule</option>
+            <option value="">Choisissez votre formule</option>
             <option>Demi-journée — 1800 TND</option>
             <option>Journée — 3000 TND</option>
           </select>
